@@ -1,20 +1,273 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My app</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baladewa Risqi | Film & Game Enthusiast</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="flex justify-center items-center h-screen overflow-hidden bg-white font-sans text-center px-6">
-    <div class="w-full">
-      <span class="text-xs rounded-full mb-2 inline-block px-2 py-1 border border-amber-500/15 bg-amber-500/15 text-amber-500">🔥 New version dropped!</span>
-      <h1 class="text-4xl lg:text-6xl font-bold font-sans">
-        <span class="text-2xl lg:text-4xl text-gray-400 block font-medium">I'm ready to work,</span>
-        Ask me anything.
-      </h1>
-    </div>
-      <img src="https://enzostvs-deepsite.hf.space/arrow.svg" class="absolute bottom-8 left-0 w-[100px] transform rotate-[30deg]" />
-    <script></script>
-  </body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-indigo-600">Baladewa Risqi</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-600 transition-smooth">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-600 transition-smooth">About</a>
+                    <a href="#hobbies" class="text-gray-700 hover:text-indigo-600 transition-smooth">Hobbies</a>
+                    <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition-smooth">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-indigo-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Baladewa Risqi</h1>
+                    <p class="text-xl mb-6">Film Buff & Gaming Enthusiast</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium hover:bg-indigo-100 transition-smooth">Get in Touch</a>
+                        <a href="#hobbies" class="border border-white text-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-indigo-600 transition-smooth">My Hobbies</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="http://static.photos/technology/640x360/42" alt="Baladewa Risqi" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2" data-aos="fade-up">About Me</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Passionate about storytelling through films and immersive gaming experiences.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/people/640x360/23" alt="Baladewa Profile" class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12" data-aos="fade-left">
+                    <p class="text-gray-700 mb-6">
+                        Hello! I'm Baladewa Risqi, a passionate individual who finds joy in the worlds of cinema and gaming. 
+                        Movies have always been my window to different cultures, emotions, and perspectives, while gaming 
+                        allows me to experience interactive storytelling at its finest.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        When I'm not watching the latest film releases or diving into new game titles, you can find me 
+                        discussing plot theories with friends or exploring behind-the-scenes content to understand the 
+                        creative process better.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full">Film Enthusiast</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full">Gamer</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full">Story Lover</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2" data-aos="fade-up">My Hobbies</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    These are the things that fuel my passion and creativity
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Film Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-smooth" data-aos="fade-up">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/movie/640x360/15" alt="Film Hobby" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i data-feather="film" class="text-indigo-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Watching Films</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            From classic cinema to modern blockbusters, I appreciate the art of filmmaking. 
+                            My favorite genres include sci-fi, fantasy, and psychological thrillers that 
+                            challenge conventional storytelling.
+                        </p>
+                        <div class="mt-4">
+                            <span class="text-sm font-medium text-indigo-600">Favorite Directors:</span>
+                            <p class="text-sm text-gray-500">Christopher Nolan, Hayao Miyazaki, Denis Villeneuve</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gaming Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-smooth" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/gaming/640x360/7" alt="Gaming Hobby" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i data-feather="cpu" class="text-indigo-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Playing Games</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Video games are my interactive escape. I enjoy RPGs for their rich narratives, 
+                            strategy games for their mental challenges, and occasionally competitive 
+                            multiplayer games for the thrill.
+                        </p>
+                        <div class="mt-4">
+                            <span class="text-sm font-medium text-indigo-600">Favorite Games:</span>
+                            <p class="text-sm text-gray-500">The Witcher 3, Red Dead Redemption 2, Stardew Valley</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2" data-aos="fade-up">Get In Touch</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Want to discuss films, games, or just say hello? I'd love to hear from you!
+                </p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <form class="space-y-6" data-aos="fade-up">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-smooth">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-smooth">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-smooth">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-smooth"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-smooth">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Baladewa Risqi</h3>
+                    <p class="text-gray-400">
+                        Film buff and gaming enthusiast sharing my passion for storytelling through different media.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-smooth">About</a></li>
+                        <li><a href="#hobbies" class="text-gray-400 hover:text-white transition-smooth">Hobbies</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 p-3 rounded-full hover:bg-indigo-600 transition-smooth">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 p-3 rounded-full hover:bg-blue-600 transition-smooth">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 p-3 rounded-full hover:bg-pink-600 transition-smooth">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 p-3 rounded-full hover:bg-red-600 transition-smooth">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Baladewa Risqi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex.space-x-8');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-0');
+            menu.classList.toggle('shadow-md');
+        });
+    </script>
+</body>
 </html>
